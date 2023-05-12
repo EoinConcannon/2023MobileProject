@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Watermelon</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="success">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Watermelon</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <img src="https://www.kroger.com/product/images/large/front/0000000004032">
+
+  <h3>Nutritions:</h3>
+  <br>
+  <ul *ngFor="let w of watermelonData">
+    <li>
+      Calories: {{w.nutritions[0]}}
+    </li>
+    <li>
+      Fat: {{w.nutritions[1]}}
+    </li>
+    <li>
+      Sugar: {{w.nutritions[2]}}
+    </li>
+    <li>
+      Carbohydrates: {{w.nutritions[3]}}
+    </li>
+    <li>
+      Protein: {{w.nutritions[4]}}
+    </li>
+  </ul>
+  <br>
+
+  <p>A watermelon (Citrullus lanatus) is a plant which was first domesticated in Africa.
+    It is a cultivated edible fruit. It is grown worldwide, there are more than 1000 varieties.</p>
+
+  <p>About 6% of a watermelon is sugar, which makes it very sweet.
+    There are many different types of watermelon.
+    Some have a green rind on the outside and a red-pink flesh on the inside, with brown seeds.
+    Some can have yellow flesh, and some can be seedless.
+    The green rind on the outside is not usually eaten, though it can be used as a vegetable.
+    It can also be stewed or pickled. Most watermelons are oblong or spherical.
+    In Japan, watermelons are grown in different shapes, such as hearts and squares.</p>
+
+  <!--https://simple.wikipedia.org/wiki/Watermelon-->
+
+  <hr>
+
+  <h4>Page visits: {{visits}}</h4>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+</ion-content>

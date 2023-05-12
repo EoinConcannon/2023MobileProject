@@ -1,19 +1,37 @@
-<ion-header [translucent]="true">
+<!--
+  <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
+-->
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-content [fullscreen]="true" color="secondary">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Home</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
- <h3>Welcome to Mobile Apps Starter project 2023</h3>
+    <h2>Fruitipedia</h2>
+
+    <br>
+    <ion-button color="light" (click)="visit()">- Search -</ion-button>
+    <hr>
+    <br>
+
+    <h3>Quick Search</h3>
+
+    <ion-button color="danger" [routerLink]="['/ag']">A - G</ion-button>
+    <br>
+    <ion-button color="primary" [routerLink]="['/hn']">H - N</ion-button>
+    <br>
+    <ion-button color="success" [routerLink]="['/ou']">O - U</ion-button>
+    <br>
+    <ion-button color="warning" [routerLink]="['/vz']">V - Z</ion-button>
+
   </div>
 </ion-content>

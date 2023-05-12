@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Raspberry</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="danger">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Raspberry</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <img src="https://cdn.shopify.com/s/files/1/0617/2750/6590/products/Raspberry_Autumn_Bliss_xx.jpg?v=1655191558">
+
+  <h3>Nutritions:</h3>
+  <br>
+  <ul *ngFor="let r of raspberryData">
+    <li>
+      Calories: {{r.nutritions[0]}}
+    </li>
+    <li>
+      Fat: {{r.nutritions[1]}}
+    </li>
+    <li>
+      Sugar: {{r.nutritions[2]}}
+    </li>
+    <li>
+      Carbohydrates: {{r.nutritions[3]}}
+    </li>
+    <li>
+      Protein: {{r.nutritions[4]}}
+    </li>
+  </ul>
+  <br>
+
+  <p>A raspberry is an aggregate fruit, meaning it has many parts joined together.
+    It is similar to a blackberry, but the fruit is hollow on the inside.
+    There are many different species of raspberry plants, but only a few of them have fruit that are sold in stores.
+    Leaves of the raspberry plant are also used fresh or dried in herbal teas.
+    The raspberry is red when ripe, and is also a source of nectar for juices.
+    Raspberries are a popular fruit in some parts of the world.</p>
+
+  <p>A raspberry plant typically grows in fields or in forest clearings where fire or wood-cutting has produced open
+    space.
+    As a cultivated plant in moist temperate regions, it is easy to grow.
+    It has a tendency to spread unless cut back.</p>
+
+  <!--https://simple.wikipedia.org/wiki/Raspberry-->
+
+  <hr>
+
+  <h4>Page visits: {{visits}}</h4>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+</ion-content>

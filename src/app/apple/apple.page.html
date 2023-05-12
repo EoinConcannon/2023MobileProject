@@ -1,0 +1,78 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Apple</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="danger">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Apple</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <img src="https://i5.walmartimages.ca/images/Large/094/514/6000200094514.jpg">
+
+  <h3>Nutritions:</h3>
+  <br>
+  <ul *ngFor="let a of appleData">
+    <li>
+      Calories: {{a.nutritions[0]}}
+    </li>
+    <li>
+      Fat: {{a.nutritions[1]}}
+    </li>
+    <li>
+      Sugar: {{a.nutritions[2]}}
+    </li>
+    <li>
+      Carbohydrates: {{a.nutritions[3]}}
+    </li>
+    <li>
+      Protein: {{a.nutritions[4]}}
+    </li>
+  </ul>
+  <br>
+
+  <p>An apple is the edible fruit of a number of trees, known for this juicy, green or red fruits.
+    The tree (Malus spp.) is grown worldwide.
+    Its fruit is low-cost and popular, and is a common fruit all over the earth.</p>
+
+  <p>Applewood is a type of wood that comes from this tree.</p>
+
+  <p>The apple tree comes from southern Kazakhstan, Kyrgyzstan, Uzbekistan, and northwestern part of China.
+    Apples have been grown for thousands of years in Asia and Europe.
+    They were brought to North America by European settlers.</p>
+
+  <p>Compare your distance to the origin of the apple</p>
+  <ion-button color="light">Use your GPS</ion-button>
+  <br>
+  distance: {{long}}
+
+  <p>Apples have religious and mythological significance in many cultures.</p>
+
+  <p>Apples are generally grown by grafting, although wild apples grow readily from seed.
+    Apple trees are large if grown from seed, but small if grafted onto roots (rootstock).
+    There are more than 10000 known variants of apples, with a range of desired characteristics.
+    Different variants are bred for various tastes and uses: cooking, eating raw and cider production are the most
+    common uses.</p>
+
+  <p>Trees and fruit are attacked by fungi, bacteria and pests.
+    In 2010, the fruit's genome was sequenced as part of research on disease control and selective breeding in apple
+    production.</p>
+
+  <p>Worldwide production of apples in 2013 was 90.8 million tonnes. China grew 49% of the total.</p>
+
+  <!--https://simple.wikipedia.org/wiki/Apple-->
+
+  <hr>
+
+  <h4>Page visits: {{visits}}</h4>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+</ion-content>

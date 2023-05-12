@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Lemon</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="warning">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Lemon</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <img src="https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5099839577611_3.JPG">
+
+  <h3>Nutritions:</h3>
+  <br>
+  <ul *ngFor="let l of lemonData">
+    <li>
+      Calories: {{l.nutritions[0]}}
+    </li>
+    <li>
+      Fat: {{l.nutritions[1]}}
+    </li>
+    <li>
+      Sugar: {{l.nutritions[2]}}
+    </li>
+    <li>
+      Carbohydrates: {{l.nutritions[3]}}
+    </li>
+    <li>
+      Protein: {{l.nutritions[4]}}
+    </li>
+  </ul>
+  <br>
+
+  <p>The lemon is a small tree (Citrus limon) that is green even in the winter.
+    It came from Asia. 'Lemon' is also the name of the tree's oval-shaped yellow fruit.
+    The fruit is used for cooking and other things in the world - usually for its juice.
+    Lemons contain numerous phytochemicals, including polyphenols, terpenes, and tannins.</p>
+
+  <p>People do not know for sure where lemons have come from.
+    However, most people think that lemons first grew in India, northern Burma, and China.
+    The lemon is the common name for Citrus limon. A lemon is a yellow citrus fruit.
+    It is related to the orange. Lemon juice is about 5% citric acid, and has a pH of 2 to 3.
+    Lemon plants vary in size yet stay generally small. The tallest height they can get is about 6 meters tall.</p>
+
+  <p>Lemons taste sour.
+    The juice, zest, and pulp are often used in cooking, often on fish and other meat for better taste.
+    Lemon is also used to flavour drinks, such as lemonade or soft drinks.</p>
+
+  <!--https://simple.wikipedia.org/wiki/Lemon-->
+
+  <hr>
+
+  <h4>Page visits: {{visits}}</h4>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+</ion-content>
